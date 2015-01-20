@@ -9,7 +9,8 @@ module.exports = function (options) {
     return through.obj(function (file, enc, cb) {
         options.rootDir = options.rootDir || file.path;
         jest.runCLI({
-            config: options
+            config: options,
+            testPathPattern: new RegExp('mea.store')
         }, options.rootDir, function (success) {
             if(!success) {
                 cb(new gutil.PluginError('gulp-jest', { message: "Tests Failed" }));
