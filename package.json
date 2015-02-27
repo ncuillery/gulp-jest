@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/Dakuan/gulp-jest",
   "dependencies": {
-    "jest-cli": "git+https://github.com/ncuillery/jest.git#alone-test-in-worker",
+    "jest-cli": "git+https://github.com/ncuillery/jest.git#jsdom-update",
     "gulp-util": "^3.0.0",
     "through2": "^0.5.1",
     "react-tools": "^0.12.1"
